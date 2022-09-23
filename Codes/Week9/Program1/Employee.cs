@@ -7,6 +7,10 @@ namespace Program1
         private double hourlyRate = 0, workHours = 0;
         private int employeeID = 0;
 
+        public string FirstName
+        {
+            get { return firstName; }
+        }
         public int EmployeeID
         {
             get { return employeeID; }

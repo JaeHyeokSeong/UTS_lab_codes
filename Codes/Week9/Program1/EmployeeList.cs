@@ -62,12 +62,23 @@ namespace Program1
                 Console.WriteLine(employee.ToString());
             }
         }
-        public void SortEmPloyees()
+        public void SortEmployeesByID()
         {
             try
             {
                 employees.Sort();
             } catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+        public void SortEmployeeByFirstName()
+        {
+            try
+            {
+                employees.Sort(new NameComparer());
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

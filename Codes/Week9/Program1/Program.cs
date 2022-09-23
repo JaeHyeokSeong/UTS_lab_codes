@@ -17,8 +17,12 @@
             employeeList.LoadEmployees("emp.txt");
             employeeList.PrintEmployees();
 
-            employeeList.SortEmPloyees();
-            Console.WriteLine("\nAfter Sorting");
+            employeeList.SortEmployeesByID();
+            Console.WriteLine("\nAfter Sorting by using an ID");
+            employeeList.PrintEmployees();
+
+            employeeList.SortEmployeeByFirstName();
+            Console.WriteLine("\nAfter Sorting by using an First Name");
             employeeList.PrintEmployees();
         }
     }
