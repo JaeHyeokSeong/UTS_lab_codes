@@ -4,7 +4,13 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            EmployeeList employeeList = new EmployeeList();
+            employeeList.LoadEmployees("emp.txt");
+            employeeList.PrintEmployees();
+
+            employeeList.SortEmPloyees();
+            Console.WriteLine("\nAfter Sorting");
+            employeeList.PrintEmployees();
         }
     }
 }
